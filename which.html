@@ -1,0 +1,324 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title> Which? </title>
+     <!-- add icon link -->
+        <link rel = "icon" href ="images/l.png" 
+        type = "image/x-icon" size="16*16"> 
+    
+<!--CSS code------------------------------------------------------------------------------------------------->
+<meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  
+<link rel="stylesheet" type="text/css" href="format.css"}>
+<script src="modal.js"> </script>
+    
+    <style>
+table,th,td {
+  border : 1px solid black;
+  border-collapse: collapse;
+}
+th,td {
+  padding: 5px;
+}
+</style>
+    
+    </head>
+    <body>
+<!-- navigation bar------------------------------------------------------------------------------------------------->
+<nav class="navbar navbar-expand-lg bg-success navbar-dark">
+  <!-- Brand/logo -->
+  <a class="navbar-brand" href="what.html"> 
+    <img src="images/l.png" alt="logo" width="30" height="30" class="d-inline-block align-top" loading="lazy"> Recycle
+  </a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbartoggle" aria-controls="navbartoggle" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+    <div class="collapse navbar-collapse" id="navbartoggle">
+  <!-- Links -->
+    <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
+    <li class="nav-item ">
+      <a class="nav-link" href="what.html">What</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" href="why.html">Why</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link active" href="which.html">Which</a>
+    </li>
+	<li class="nav-item">
+      <a class="nav-link" href="how.html">How</a>
+    </li>
+     <li class="nav-item">
+      <a class="nav-link" href="news.html">News</a>
+    </li>
+         <li class="nav-item">
+      <a class="nav-link" href="calculate.html">Calculators</a>
+    </li>
+	<li class="nav-item">
+      <a class="nav-link" href="about.html">About</a>
+    </li>
+  </ul>
+   <form class="form-inline my-2 my-lg-0">
+      <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+      <button class="btn btn-outline-light my-2 my-sm-0" type="submit">Search</button>
+    </form>
+  </div>
+</nav>
+    
+<!--social bar---------------------------------------------------------------------------------------------------------------------->
+
+<div class="icon-bar">
+  <a href="mailto:merryzeraay49@gmail.com" class="google" target="_blank"><i class="fa fa-google"></i></a>
+  <a href="https://www.youtube.com/channel/UCeV8IPInaAeirr2wPw5U_tA?view_as=subscriber" class="youtube" target="_blank"><i class="fa fa-youtube"></i></a> 
+</div>
+        
+<!--container------------------------------------------------------------------------------------------------------------>
+<div class="container">
+<!--contribute--------------------------------------------------------------------------------------------------------------------------->
+
+    <br>
+    <div class=row>
+    <div class="col-sm-11"></div>
+<div class=" col-sm-1">
+<input type="button" class="btn btn-success" id="myBtn" value="Contribute"/>
+</div>
+    </div>
+<!-- The Modal -->
+<div id="myModal" class="modal">
+
+  <!-- Modal content -->
+  <div class="modal-content">
+  <span class="close">&times;</span>
+    <form action="contribute.html">
+  <h2> Sign up to contribute</h2>
+    
+  <div class="form-group">
+	  <label for="uname"> Username:</label>
+	  <input type="text" class="form-control" id="uname" placeholder="User Name" name="uname" required>
+   </div>
+   <div>
+	  <label for="email">Email:</label>
+      <input type="email" class="form-control" id="email" placeholder="example@gmail.com" name="email" required>
+    </div>
+    <div class="form-group">
+      <label for="pwd">Password:</label>
+      <input type="password" class="form-control" id="pwd" placeholder="*********" name="pswd" required>
+    </div>
+	<div>
+      <label for="num"> Mobile Number:</label>
+     <input type="number" class="form-control" id="num" placeholder="+9715********" name="num" required><br><br>
+	 </div>
+	<div class="form-group form-check">
+	  <label class="form-check lebel">
+	    <input class="form-check-input" type="checkbox" name="remember" required> I agree on terms and conditions.
+	  </label>
+	 </div>
+   <button onclick="validate();" type="submit"  class="btn btn-success" > Submit</button>
+</form>
+
+</div>
+
+</div>
+
+<script src="modal.js"> </script>
+<h1>Which products are recyclable?</h1> <br><br>
+     <div class="row">
+    <div class="col-sm-4">
+      <h3>Products that can be recycled </h3>
+      <p>
+      
+      <li><button type="button" class="btn btn-light"
+	  onclick="document.getElementById('wood').style.display='block'
+	  ;document.getElementById('wood1').style.display='block'
+	  ;document.getElementById('demo').style.display='none'
+	  ;document.getElementById('plastic').style.display='none'
+	  ;document.getElementById('demo1').style.display='none'
+	  ;document.getElementById('plastic1').style.display='none'
+	  ;document.getElementById('com1').style.display='none'
+	  ;document.getElementById('com').style.display='none'
+	  ;document.getElementById('glass').style.display='none'
+	  ;document.getElementById('glass1').style.display='none'">Wood</button> 
+	 
+     <li><button type="button" class="btn btn-light"
+	 onclick="document.getElementById('plastic').style.display='block'
+	 ;document.getElementById('plastic1').style.display='block'
+	 ;document.getElementById('demo').style.display='none'
+	 ;document.getElementById('wood').style.display='none'
+	 ;document.getElementById('demo1').style.display='none'
+	 ;document.getElementById('wood1').style.display='none'
+	 ;document.getElementById('com1').style.display='none'
+	 ;document.getElementById('com').style.display='none'
+	 ;document.getElementById('glass').style.display='none'
+	 ;document.getElementById('glass1').style.display='none'
+	 ;document.getElementById('metal').style.display='none'
+	 ;document.getElementById('metal1').style.display='none'">Plastic</button> 
+	 
+     <li> <button type="button" class="btn btn-light"
+	 onclick="document.getElementById('com').style.display='block'
+	 ;document.getElementById('com1').style.display='block'
+	 ;document.getElementById('demo').style.display='none'
+	 ;document.getElementById('wood').style.display='none'
+	 ;document.getElementById('demo1').style.display='none'
+	 ;document.getElementById('wood1').style.display='none'
+	 ;document.getElementById('plastic1').style.display='none'
+	 ;document.getElementById('plastic').style.display='none'
+	 ;document.getElementById('glass').style.display='none'
+	 ;document.getElementById('glass1').style.display='none'
+	 ;document.getElementById('metal').style.display='none'
+	 ;document.getElementById('metal1').style.display='none'"> Computers </button> 
+     
+	  <li> <button type="button" class="btn btn-light"
+	  onclick="document.getElementById('glass').style.display='block'
+	  ;document.getElementById('glass1').style.display='block'
+	  ;document.getElementById('demo').style.display='none'
+	  ;document.getElementById('wood').style.display='none'
+	  ;document.getElementById('demo1').style.display='none'
+	  ;document.getElementById('wood1').style.display='none'
+	  ;document.getElementById('plastic1').style.display='none'
+	  ;document.getElementById('plastic').style.display='none'
+	  ;document.getElementById('com1').style.display='none'
+	  ;document.getElementById('com').style.display='none'
+	  ;document.getElementById('metal').style.display='none'
+	  ;document.getElementById('metal1').style.display='none'">Glass </button> 
+	  
+      <li> <button type="button" class="btn btn-light"
+	  onclick="document.getElementById('metal').style.display='block'
+	  ;document.getElementById('metal1').style.display='block'
+	  ;document.getElementById('demo').style.display='none'
+	  ;document.getElementById('wood').style.display='none'
+	  ;document.getElementById('demo1').style.display='none'
+	  ;document.getElementById('wood1').style.display='none'
+	  ;document.getElementById('plastic1').style.display='none'
+	  ;document.getElementById('plastic').style.display='none'
+	  ;document.getElementById('com1').style.display='none'
+	  ;document.getElementById('com').style.display='none'
+	  ;document.getElementById('glass').style.display='none'
+	  ;document.getElementById('glass1').style.display='none'"> Metals </button> 
+      
+      </p>
+    </div>
+   
+   <div class="col-sm-4">
+      
+      <h3>Methods</h3>
+      <p id="demo"> Recycling includes four steps: Collection, Processing, Manufacturing, Purchasing Recycled-Content Products</p>
+	  
+      <p id="wood" style="display:none"><b> Wood: </b> The Recycling Process Waste wood and timber is usually divided into 
+	  recycling plants for processing. The pieces are then loaded into a powerful wood shredder that breaks the pieces through 
+	  a variety of processes. The product varies in size and the vibrating screener performs well in sorting out the products.</p>
+	
+      <p id="plastic" style="display:none"><b> Plastics: </b> Broadly, there are two major ways to recycle plastic: 
+	   mechanical recycling ("chop and wash"), where the plastic is washed, ground into powders and melted; and 
+	   chemical recycling, where the plastic is broken down into monomers. 
+	   Before recycling, most plastics are sorted according to their resin type.</p>
+      
+      <p id="com" style="display:none"> <b>Computers:</b> Computer recycling refers to the reprocessing 
+	  and reuse of desktop computers and laptops that have been discarded or considered to be obsolete. 
+	  It also includes computer components such as monitors, screens, keyboards, motherboards, mouse, and central processors.</p>
+       
+       <p id="glass" style="display:none"> <b>Glass: </b> The glass is sorted by colour and washed to remove any impurities.
+	   The glass is then crushed and melted, then moulded into new products such as bottles and jars. Or it may be used for 
+	   alternative purposes such as brick manufacture or decorative uses. The glass is then sent back to the shops ready to be used again.</p>
+       
+        <p id="metal" style="display:none"> <b> Metals:</b> The metal recycling process involves collecting the metals, 
+		processing them, and then eventually having them shredded and then melted in furnaces at high temperatures to produce 
+		blocks or sheets to be sold to manufacturers of metal products. And there is a definite need for scrap to be recycled. </p>
+    </div>
+    <div class="col-sm-4">
+      <h3>Links</h3> 
+      
+        <p id="demo1"><button type="button" class="btn btn-light" > Other sources that can detail more about specific recycling processes.</button> </p>
+      
+      <p id="wood1" style="display:none"> <button type="button" class="btn btn-light"><a href='https://en.wikipedia.org/wiki/Timber_recycling#Recycling_timber' target="_blank"> Wood: Wikipedia</a></button></p>
+      
+      <p id="plastic1" style="display:none"> <button type="button" class="btn btn-light"> <a href='https://en.wikipedia.org/wiki/Plastic_recycling#:~:text=Broadly%2C%20there%20are%20two%20major,according%20to%20their%20resin%20type.' target="_blank">Plastic: Wikipedia</a></button></p>
+      
+       <p id="com1" style="display:none">  <button type="button" class="btn btn-light"><a href='https://en.wikipedia.org/wiki/Computer_recycling#Recycling_methods' target="_blank">Computer: Wikipedia</a></button></p>
+       
+       <p id="glass1" style="display:none"> <button type="button" class="btn btn-light"> <a href='https://en.wikipedia.org/wiki/Glass_recycling#Processing_of_external_cullet' target="_blank">Glass: Wikipedia</a></button></p>
+       
+       <p id="metal1" style="display:none"> <button type="button" class="btn btn-light"> <a href='https://en.wikipedia.org/wiki/Aluminium_recycling#Process_for_beverage_cans' target="_blank">Metal (Aluminium): Wikipedia</a></button></p>
+       
+    </div>
+    </div><br><br>
+<!-- from xml----------------------------------------------------------------------------------------------------------------------------->
+    <div class="row">
+        <div class="col-lg-7">
+         <h3>More information about products and their footprint values : </h3>
+<button type="button" class="btn btn-success" onclick="loadXMLDoc()">Find out more</button>
+<br><br>
+            </div>
+        <div class="col-lg-5">
+<table id="place1"></table>
+            </div>
+</div>
+<script>
+function loadXMLDoc() {
+  var xmlhttp = new XMLHttpRequest();
+  xmlhttp.onreadystatechange = function() {
+    if (this.readyState == 4 && this.status == 200) {
+      myFunction(this);
+    }
+  };
+  xmlhttp.open("GET", "recycleproduct.xml", true);
+  xmlhttp.send();
+}
+function myFunction(xml) {
+  var i;
+  var xmlDoc = xml.responseXML;
+  var table="<tr><th>Type</th><th>Product</th><th>Footprint</th><th>Recyclingcost</th></tr>";
+  var x = xmlDoc.getElementsByTagName("product");
+  for (i = 0; i <x.length; i++) { 
+    table += "<tr><td>" +
+    x[i].getElementsByTagName("Type")[0].childNodes[0].nodeValue +
+    "</td><td>" +
+    x[i].getElementsByTagName("prdct")[0].childNodes[0].nodeValue +
+    "</td><td>"+
+    x[i].getElementsByTagName("footprint")[0].childNodes[0].nodeValue +
+    "</td><td>"+
+    x[i].getElementsByTagName("recyclingcost")[0].childNodes[0].nodeValue +
+    "</td></tr>";
+  }
+  document.getElementById("place1").innerHTML = table;
+}
+</script>
+        </div>
+    </body>
+<!--footer----------------------------------------------------------------------------------------------------------------------------->
+    <br><br>
+    <footer class="card text-white bg-success text-center"  style="margin-bottom:0 ">
+        <div class="row">
+        <div class="col-sm-4 text-left">
+        <h5 >Useful Links</h5>
+            <li><a href="https://en.wikipedia.org/wiki/Recycling" target="_blank"> Wikipedia</a></li>  
+            <li><a href="https://www.britannica.com/science/recycling" target="_blank"> Britannica</a></li>
+            <li><a href="https://search.proquest.com/docview/2390571904?pq-origsite=gscholar&fromopenview=true" target="_blank">
+                ProQuest</a></li>
+            <li><a href="https://nems.nih.gov/environmental-programs/Pages/Benefits-of-Recycling.aspx" target="_blank"> NIS</a></li>
+        </div>
+            
+            <div class="col-sm-4 icon-footer">
+                <h5>Contact us</h5>
+                <br>
+  <a href="#" class="twitter" ><i class="fa fa-twitter"></i></a>
+  <a href="#" class="linkedin"><i class="fa fa-linkedin"></i></a>  
+            </div>
+            
+        <div class="col-sm-4">
+            <a href="#">Terms and Conditions</a> <br>
+            <a href="#">Privacy Policy</a> <br>
+            <button type="button" class="btn btn-success" disabled>Copyright © 2020 Merry Zeray</button>
+
+        </div>
+            </div>        
+<div class="alert alert-success " role="alert">
+<a href="feedback.html" class="alert-link">Feedback</a>
+    </div>
+</footer>
+</html>

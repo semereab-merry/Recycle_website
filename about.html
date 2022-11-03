@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title> About </title>
+     <!-- add icon link -->
+        <link rel = "icon" href ="images/l.png" 
+        type = "image/x-icon" size="16*16"> 
+    
+<!--CSS code------------------------------------------------------------------------------------------------->
+<meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  
+<link rel="stylesheet" type="text/css" href="format.css"}>
+<script src="modal.js"> </script>
+    
+    <style>
+.containerimg {
+  position: relative;
+  width: 80%;
+    height:80%;
+position:center;
+        }
+
+       
+.image {
+  opacity: 1;
+  display: block;
+  width: 100%;
+  height: auto;
+  transition: .5s ease;
+  backface-visibility: hidden;
+}
+
+.middle {
+  transition: .5s ease;
+  opacity: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+.containerimg:hover .image {
+  opacity: 0.3;
+}
+
+.containerimg:hover .middle {
+  opacity: 1;
+}
+
+.text {
+  background-color: #4CAF50;
+  color: white;
+  font-size: 16px;
+  padding: 16px 32px;
+}
+</style>
+
+    </head>
+    <body>
+<!-- navigation bar------------------------------------------------------------------------------------------------->
+<nav class="navbar navbar-expand-lg bg-success navbar-dark">
+  <!-- Brand/logo -->
+  <a class="navbar-brand" href="what.html"> 
+    <img src="images/l.png" alt="logo" width="30" height="30" class="d-inline-block align-top" loading="lazy"> Recycle
+  </a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbartoggle" aria-controls="navbartoggle" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+    <div class="collapse navbar-collapse" id="navbartoggle">
+  <!-- Links -->
+    <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
+    <li class="nav-item ">
+      <a class="nav-link" href="what.html">What</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" href="why.html">Why</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" href="which.html">Which</a>
+    </li>
+         <li class="nav-item">
+      <a class="nav-link" href="how.html">How</a>
+    </li>
+     <li class="nav-item">
+      <a class="nav-link" href="news.html">News</a>
+    </li>
+         <li class="nav-item">
+      <a class="nav-link" href="calculate.html">Calculators</a>
+    </li>
+	<li class="nav-item">
+      <a class="nav-link active" href="about.html">About</a>
+    </li>
+  </ul>
+   <form class="form-inline my-2 my-lg-0">
+      <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+      <button class="btn btn-outline-light my-2 my-sm-0" type="submit">Search</button>
+    </form>
+  </div>
+</nav>
+    
+<!--social bar---------------------------------------------------------------------------------------------------------------------->
+
+<div class="icon-bar">
+  <a href="mailto:merryzeraay49@gmail.com" class="google" target="_blank"><i class="fa fa-google"></i></a>
+  <a href="https://www.youtube.com/channel/UCeV8IPInaAeirr2wPw5U_tA?view_as=subscriber" class="youtube" target="_blank"><i class="fa fa-youtube"></i></a> 
+</div>
+        
+<!--container------------------------------------------------------------------------------------------------------------>
+<div class="container">
+<!--contribute--------------------------------------------------------------------------------------------------------------------------->
+ <br>
+    <div class=row>
+    <div class="col-sm-10"></div>
+<div class=" col-sm-2">
+<input type="button" class="btn btn-success" id="myBtn" value="Contribute"/>
+</div>
+    </div>
+    <!-- The Modal -->
+<div id="myModal" class="modal">
+    <!-- Modal content -->
+    
+    <div class="modal-content">
+  <span class="close">&times;</span>
+    <form action="contribute.html">
+  <h2> Sign up to contribute</h2>
+    
+  <div class="form-group">
+	  <label for="uname"> Username:</label>
+	  <input type="text" class="form-control" id="uname" placeholder="User Name" name="uname" required>
+   </div>
+   <div>
+	  <label for="email">Email:</label>
+      <input type="email" class="form-control" id="email" placeholder="example@gmail.com" name="email" required>
+    </div>
+    <div class="form-group">
+      <label for="pwd">Password:</label>
+      <input type="password" class="form-control" id="pwd" placeholder="*********" name="pswd" required>
+    </div>
+	<div>
+      <label for="num"> Mobile Number:</label>
+     <input type="number" class="form-control" id="num" placeholder="+9715********" name="num" required><br><br>
+	 </div>
+	<div class="form-group form-check">
+	  <label class="form-check lebel">
+	    <input class="form-check-input" type="checkbox" name="remember" required> I agree on terms and conditions.
+	  </label>
+	 </div>
+   <button onclick="validate();" type="submit"  class="btn btn-success" > Submit</button>
+</form>
+
+</div>
+
+</div>
+
+<script src="modal.js"> </script>
+
+
+<h1>The Author</h1>
+
+<div class="row row-cols-1 row-cols-md-2">
+  <div class="col-lg-6">
+      
+<div class="containerimg card">
+  <img src="images/ava.png" alt="Avatar" class="image" style="width:100%;">
+  <div class="middle">
+      <div class="text">Merry Zeray</div> </div> </div>        </div>
+<div class="col-lg-3">
+        <br><br>
+          <div class="card text-white bg-secondary">
+<div class="card-body">
+<br>
+    <p> Name: Merry Zeray</p>
+    <p>Position: Author</p>
+    <p> Recycling</p>
+    <p>Zayed University: Student</p>
+   <p>Instructor: Ahmed Seffah</p>
+    <p>Course: swe245</p>
+    <p>Email: m80008149@zu.ac.ae</p>
+      </div>
+    </div>
+      </div>
+    </div>
+    <br><br>
+    <div class="jumbotron">
+  <h5 class="display-4">Words of the Author:</h5>
+        <p class="lead"> <span style= "color:#660000; font-size: 24px" > <i>"Recycling is what our world needs at the moment, no recycling can cause to the extinction of different species including us."</i></span></p>
+  <hr class="my-4">
+  <p><span style="font-size: 20px">Recycle now, Your life will be happier tomorrow!</span></p>
+</div>
+    <br>
+    <div class="row">
+    <div class="col-lg-4">
+            <h5>Location of the Author :</h5>
+        </div>
+        <div class="col-lg-8">
+          <div class="mapouter"><div class="gmap_canvas"><iframe width="600px" height="300px" id="gmap_canvas" src="https://maps.google.com/maps?q=zayed%20university&t=k&z=15&ie=UTF8&iwloc=&output=embed" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></iframe>
+        </div><style>.mapouter{position:relative;text-align:right;height:400px;width:500px;}.gmap_canvas {overflow:hidden;background:none!important;height:400px;width:500px;}</style></div>
+        </div>
+    </div>
+        </div>
+    </body>
+    <!--footer----------------------------------------------------------------------------------------------------------------------------->
+    <br><br>
+    <footer class="card text-white bg-success text-center"  style="margin-bottom:0 ">
+        <div class="row">
+        <div class="col-sm-4 text-left">
+        <h5 >Useful Links</h5>
+            <li><a href="https://en.wikipedia.org/wiki/Recycling" target="_blank"> Wikipedia</a></li>  
+            <li><a href="https://www.britannica.com/science/recycling" target="_blank"> Britannica</a></li>
+            <li><a href="https://search.proquest.com/docview/2390571904?pq-origsite=gscholar&fromopenview=true" target="_blank">
+                ProQuest</a></li>
+            <li><a href="https://nems.nih.gov/environmental-programs/Pages/Benefits-of-Recycling.aspx" target="_blank"> NIS</a></li>
+        </div>
+            
+            <div class="col-sm-4 icon-footer">
+                <h5>Contact us</h5>
+                <br>
+  <a href="#" class="twitter" ><i class="fa fa-twitter"></i></a>
+  <a href="#" class="linkedin"><i class="fa fa-linkedin"></i></a>  
+            </div>
+            
+        <div class="col-sm-4">
+            <a href="#">Terms and Conditions</a> <br>
+            <a href="#">Privacy Policy</a> <br>
+            <button type="button" class="btn btn-success" disabled>Copyright © 2020 Merry Zeray</button>
+
+        </div>
+            </div>        
+<div class="alert alert-success " role="alert">
+<a href="feedback.html" class="alert-link">Feedback</a>
+    </div>
+</footer>
+</html>

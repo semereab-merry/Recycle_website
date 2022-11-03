@@ -1,0 +1,38 @@
+<recyclinglist>
+<product>
+<Type>Plastic</Type>
+<prdct>Bottle</prdct>
+<footprint>300</footprint>
+<recyclingcost>25 Drhm</recyclingcost>
+</product>
+<product>
+<Type>Plastic</Type>
+<prdct>Bags</prdct>
+<footprint>450</footprint>
+<recyclingcost>20 Drhm</recyclingcost>
+</product>
+<product>
+<Type>Metal</Type>
+<prdct>Cans</prdct>
+<footprint>600</footprint>
+<recyclingcost>40 Drhm</recyclingcost>
+</product>
+<product>
+<Type>Glass</Type>
+<prdct>Bottle</prdct>
+<footprint>900</footprint>
+<recyclingcost>55 Drhm</recyclingcost>
+</product>
+<product>
+<Type>Glass</Type>
+<prdct>Kitchen utilities</prdct>
+<footprint>900</footprint>
+<recyclingcost>65 Drhm</recyclingcost>
+</product> 
+<product>
+<Type>Domestic</Type>
+<prdct>Kitchen garbage</prdct>
+<footprint>200</footprint>
+<recyclingcost>15 Drhm</recyclingcost>
+</product>    
+</recyclinglist>

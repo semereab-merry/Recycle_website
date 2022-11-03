@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title> How </title>
+    <!-- add icon link -->
+        <link rel = "icon" href ="images/l.png" 
+        type = "image/x-icon" size="16*16"> 
+<!--CSS code------------------------------------------------------------------------------------------------->
+<meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  
+<link rel="stylesheet" type="text/css" href="format.css"}>
+<script src="modal.js"> </script>
+</head>
+<body>
+
+<!-- navigation bar------------------------------------------------------------------------------------------------->
+<nav class="navbar navbar-expand-lg bg-success navbar-dark">
+  <!-- Brand/logo -->
+  <a class="navbar-brand" href="what.html"> 
+    <img src="images/l.png" alt="logo" width="30" height="30" class="d-inline-block align-top" loading="lazy"> Recycle
+  </a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbartoggle" aria-controls="navbartoggle" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+    <div class="collapse navbar-collapse" id="navbartoggle">
+  <!-- Links -->
+    <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
+    <li class="nav-item ">
+      <a class="nav-link" href="what.html">What</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" href="why.html">Why</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" href="which.html">Which</a>
+    </li>
+	<li class="nav-item">
+      <a class="nav-link active" href="how.html">How</a>
+    </li>
+     <li class="nav-item">
+      <a class="nav-link" href="news.html">News</a>
+    </li>
+         <li class="nav-item">
+      <a class="nav-link" href="calculate.html">Calculators</a>
+    </li>
+	<li class="nav-item">
+      <a class="nav-link" href="about.html">About</a>
+    </li>
+  </ul>
+   <form class="form-inline my-2 my-lg-0">
+      <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+      <button class="btn btn-outline-light my-2 my-sm-0" type="submit">Search</button>
+    </form>
+  </div>
+</nav>
+    
+<!--social bar---------------------------------------------------------------------------------------------------------------------->
+
+<div class="icon-bar">
+  <a href="mailto:merryzeraay49@gmail.com" class="google" target="_blank"><i class="fa fa-google"></i></a>
+  <a href="https://www.youtube.com/channel/UCeV8IPInaAeirr2wPw5U_tA?view_as=subscriber" class="youtube" target="_blank"><i class="fa fa-youtube"></i></a> 
+</div>
+
+<!--container------------------------------------------------------------------------------------------------------------>
+<div class="container">
+<!--contribute--------------------------------------------------------------------------------------------------------------------------->
+  <br>
+    <div class=row>
+    <div class="col-sm-11"></div>
+<div class=" col-sm-1">
+<input type="button" class="btn btn-success" id="myBtn" value="Contribute"/>
+</div>
+    </div>
+    <!-- The Modal -->
+    <div id="myModal" class="modal">
+
+  <!-- Modal content -->
+  <div class="modal-content">
+  <span class="close">&times;</span>
+    <form action="contribute.html">
+  <h2> Sign up to contribute</h2>
+    
+  <div class="form-group">
+	  <label for="uname"> Username:</label>
+	  <input type="text" class="form-control" id="uname" placeholder="User Name" name="uname" required>
+   </div>
+   <div>
+	  <label for="email">Email:</label>
+      <input type="email" class="form-control" id="email" placeholder="example@gmail.com" name="email" required>
+    </div>
+    <div class="form-group">
+      <label for="pwd">Password:</label>
+      <input type="password" class="form-control" id="pwd" placeholder="*********" name="pswd" required>
+    </div>
+	<div>
+      <label for="num"> Mobile Number:</label>
+     <input type="number" class="form-control" id="num" placeholder="+9715********" name="num" required><br><br>
+	 </div>
+	<div class="form-group form-check">
+	  <label class="form-check lebel">
+	    <input class="form-check-input" type="checkbox" name="remember" required> I agree on terms and conditions.
+	  </label>
+	 </div>
+   <button onclick="validate();" type="submit"  class="btn btn-success" > Submit</button>
+</form>
+
+</div>
+
+</div>
+
+<script src="modal.js"> </script>
+    <h1>What are the steps for recycling?</h1><br>
+
+    <!-- Image Map Generated by http://www.image-map.net/ -->
+<img src="images/step.jpg" usemap="#image-map">
+
+<map name="image-map">
+    <area target="_blank" alt="Reduce" title="Reduce" href="https://home.fandom.com/wiki/Reducing" coords="57,221,196,271" shape="rect">
+    <area target="_blank" alt="Reuse" title="Reuse" href="https://home.fandom.com/wiki/Reusing" coords="289,217,415,271" shape="rect">
+    <area target="_blank" alt="Recycle" title="Recycle" href="https://home.fandom.com/wiki/Recycling" coords="516,224,640,269" shape="rect">
+    <area target="_blank" alt="Recreate" title="Recreate" href="https://en.wikipedia.org/wiki/Resource_recovery" coords="729,225,875,265" shape="rect">
+</map>
+    </div>
+    </body>
+    <!--footer----------------------------------------------------------------------------------------------------------------------------->
+    <br><br>
+    <footer class="card text-white bg-success text-center"  style="margin-bottom:0 ">
+        <div class="row">
+        <div class="col-sm-4 text-left">
+        <h5 >Useful Links</h5>
+            <li><a href="https://en.wikipedia.org/wiki/Recycling" target="_blank"> Wikipedia</a></li>  
+            <li><a href="https://www.britannica.com/science/recycling" target="_blank"> Britannica</a></li>
+            <li><a href="https://search.proquest.com/docview/2390571904?pq-origsite=gscholar&fromopenview=true" target="_blank">
+                ProQuest</a></li>
+            <li><a href="https://nems.nih.gov/environmental-programs/Pages/Benefits-of-Recycling.aspx" target="_blank"> NIS</a></li>
+        </div>
+            
+            <div class="col-sm-4 icon-footer">
+                <h5>Contact us</h5>
+                <br>
+  <a href="#" class="twitter" ><i class="fa fa-twitter"></i></a>
+  <a href="#" class="linkedin"><i class="fa fa-linkedin"></i></a>  
+            </div>
+            
+        <div class="col-sm-4">
+            <a href="#">Terms and Conditions</a> <br>
+            <a href="#">Privacy Policy</a> <br>
+            <button type="button" class="btn btn-success" disabled>Copyright © 2020 Merry Zeray</button>
+
+        </div>
+            </div>        
+<div class="alert alert-success " role="alert">
+<a href="feedback.html" class="alert-link">Feedback</a>
+    </div>
+</footer>
+</html>

@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title> Newsroom </title>
+    <!-- add icon link -->
+        <link rel = "icon" href ="images/l.png" 
+        type = "image/x-icon" size="16*16"> 
+<!--CSS code------------------------------------------------------------------------------------------------->
+<meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  
+<link rel="stylesheet" type="text/css" href="format.css"}>
+<script src="modal.js"> </script>
+</head>
+<body>
+
+<!-- navigation bar------------------------------------------------------------------------------------------------->
+<nav class="navbar navbar-expand-lg bg-success navbar-dark">
+  <!-- Brand/logo -->
+  <a class="navbar-brand" href="what.html"> 
+    <img src="images/l.png" alt="logo" width="30" height="30" class="d-inline-block align-top" loading="lazy"> Recycle
+  </a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbartoggle" aria-controls="navbartoggle" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+    <div class="collapse navbar-collapse" id="navbartoggle">
+  <!-- Links -->
+    <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
+    <li class="nav-item ">
+      <a class="nav-link" href="what.html">What</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" href="why.html">Why</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" href="which.html">Which</a>
+    </li>
+	<li class="nav-item">
+      <a class="nav-link" href="how.html">How</a>
+    </li>
+     <li class="nav-item">
+      <a class="nav-link active" href="news.html">News</a>
+    </li>
+         <li class="nav-item">
+      <a class="nav-link" href="calculate.html">Calculators</a>
+    </li>
+	<li class="nav-item">
+      <a class="nav-link" href="about.html">About</a>
+    </li>
+  </ul>
+   <form class="form-inline my-2 my-lg-0">
+      <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+      <button class="btn btn-outline-light my-2 my-sm-0" type="submit">Search</button>
+    </form>
+  </div>
+</nav>
+    
+<!--social bar---------------------------------------------------------------------------------------------------------------------->
+
+<div class="icon-bar">
+  <a href="mailto:merryzeraay49@gmail.com" class="google" target="_blank"><i class="fa fa-google"></i></a>
+  <a href="https://www.youtube.com/channel/UCeV8IPInaAeirr2wPw5U_tA?view_as=subscriber" class="youtube" target="_blank"><i class="fa fa-youtube"></i></a> 
+</div>
+
+<!--container------------------------------------------------------------------------------------------------------------>
+<div class="container">
+<!--contribute--------------------------------------------------------------------------------------------------------------------------->
+    <br>
+    <div class=row>
+    <div class="col-sm-11"></div>
+<div class=" col-sm-1">
+<input type="button" class="btn btn-success" id="myBtn" value="Contribute"/>
+</div>
+    </div>
+    <!-- The Modal -->
+    <div id="myModal" class="modal">
+
+  <!-- Modal content -->
+  <div class="modal-content">
+  <span class="close">&times;</span>
+    <form action="contribute.html">
+  <h2> Sign up to contribute</h2>
+    
+  <div class="form-group">
+	  <label for="uname"> Username:</label>
+	  <input type="text" class="form-control" id="uname" placeholder="User Name" name="uname" required>
+   </div>
+   <div>
+	  <label for="email">Email:</label>
+      <input type="email" class="form-control" id="email" placeholder="example@gmail.com" name="email" required>
+    </div>
+    <div class="form-group">
+      <label for="pwd">Password:</label>
+      <input type="password" class="form-control" id="pwd" placeholder="*********" name="pswd" required>
+    </div>
+	<div>
+      <label for="num"> Mobile Number:</label>
+     <input type="number" class="form-control" id="num" placeholder="+9715********" name="num" required><br><br>
+	 </div>
+	<div class="form-group form-check">
+	  <label class="form-check lebel">
+	    <input class="form-check-input" type="checkbox" name="remember" required> I agree on terms and conditions.
+	  </label>
+	 </div>
+   <button onclick="validate();" type="submit"  class="btn btn-success" > Submit</button>
+</form>
+
+</div>
+
+</div>
+
+<script src="modal.js"> </script>
+
+
+<h1>What Is New?</h1> <br> 
+ 
+  <div class="row">
+<div class="row row-cols-1 row-cols-md-3">
+  <div class="col mb-4">
+    <div class="card h-100 text-white bg-secondary">
+    <img src="images/a.jpg" class="card-img-top">
+    <div class="card-body">
+      <h5 class="card-title">Is Apple really as green as it claims?</h5>
+      <p class="card-text">Upgrading to an iPhone 12? Apple Inc. is happy to take your old phone off your hands. “If it’s in good shape, we’ll help it go to a new owner,” the company promises on the website promoting its trade-in program. “If not, we’ll send it to our recycling partner, so we can save more precious materials and take less from the earth.”</p>
+     <div class="card-footer bg-transparent border-success"> <p class="btn btn-light"><small class="text-muted"><a href="https://economictimes.indiatimes.com/news/international/business/is-apple-really-as-green-as-it-claims-heres-a-look-into-the-iphone-recycling-scene/articleshow/78730832.cms" target="_blank">Read more.</a></small></p></div>
+    </div>
+  </div>
+  </div>
+  <div class="col mb-4">
+  <div class="card h-100 text-white bg-secondary">
+    <img src="images/c.jpg" class="card-img-top" >
+    <div class="card-body">
+      <h5 class="card-title">Leaf-cutter bees as plastic recyclers? Not a good idea, say scientists</h5>
+      <p class="card-text">Bioengineers around the world are working to develop plastic-eating "super" enzymes that can break down the human-made material's molecular structure faster to aid recycling efforts. In another research effort published in 2019, entomologists noted leaf-cutter bees were using plastic waste to construct their nests. </p>
+     <div class="card-footer bg-transparent border-success"> <p class="btn btn-light"><small class="text-muted"><a href="https://www.sciencedaily.com/releases/2020/11/201103191004.htm" target="_blank">Read more.</a></small></p></div>
+    </div>
+    </div>
+  </div>
+  <div class="col mb-4">
+  <div class="card h-100 text-white bg-secondary">
+    <img src="images/b.jpg" class="card-img-top" >
+    <div class="card-body">
+      <h5 class="card-title">COVID-19 restrictions squeeze incomes of waste recyclers</h5>
+      <p class="card-text"> Thousands of people from Nairobi's poorest districts who typically scramble through waste to earn money can no longer do so due to COVID-19.
+
+It's East Africa's biggest dumpsite and on any normal day, about 850 tonnes of rubbish is left here. The waste workers have no physical protection from potentially toxic or hazardous waste, which ends up there.</p>
+     <div class="card-footer bg-transparent border-success"> <p class="btn btn-light"><small class="text-muted"><a href="https://www.euronews.com/2020/10/16/covid-19-restrictions-squeeze-incomes-of-waste-recyclers" target="_blank">Read more.</a></small></p></div>
+     </div>
+    </div>
+  </div>
+  <div class="col mb-4">
+  <div class="card h-100 text-white bg-secondary">
+    <img src="images/g.jpg" class="card-img-top" >
+    <div class="card-body">
+      <h5 class="card-title">Guide to recycling centres in Dubai by area</h5>
+      <p class="card-text">As the population of Dubai grows, the quantity of waste being produced does as well. This includes paper, plastic, electronic waste and more! For instance, did you know that food waste during the Holy Month of Ramadan increases by 1.5 times the normal amount? However, there is a way every resident in Dubai can make an effort to reduce the amount of waste produced – recycling. The simple act of recycling helps manage waste and use it for alternative purposes.  </p>
+     <div class="card-footer bg-transparent border-success"> <p class="btn btn-light"><small class="text-muted"><a href="https://www.bayut.com/mybayut/recycling-centres-dubai/" target="_blank">Read more.</a></small></p></div>
+     </div>
+    </div>
+  </div>
+  <div class="col mb-4">
+  <div class="card h-100 text-white bg-secondary">
+    <img src="images/e.jpg" class="card-img-top" >
+    <div class="card-body">
+      <h5 class="card-title">A free recycling collection service has just launched in UAE</h5>
+      <p class="card-text">UAE laundry service Washmen are doing their bit for the environment with the launch of their new recycling service. When customers place a laundry order with them, they’re required to leave the load outside their door for collection, and now they can leave their home recycling waste as well for free.</p>
+     <div class="card-footer bg-transparent border-success"> <p class="btn btn-light"><small class="text-muted"><a href="https://whatson.ae/2020/01/a-dhs1-recycling-collection-service-has-just-launched-in-uae/" target="_blank">Read more.</a></small></p></div>
+    </div>
+    </div>
+  </div>
+  <div class="col mb-4">
+  <div class="card h-100 text-white bg-secondary">
+    <img src="images/f.jpg" class="card-img-top" >
+    <div class="card-body">
+      <h5 class="card-title">A bus on UAE roads to collect recyclable waste</h5>
+      <p class="card-text">The multi-coloured bus was kept on display at the Abu Dhabi Sustainability Week.
+Soon, a recycling bus - a first-of-its-kind - will be on the UAE streets, collecting recyclable waste and creating awareness about sustainable environment.
+
+Dubai-based Dulsco, an innovative solutions and services provider, has announced that the refurbished bus will collect mixed recyclables, e-waste, batteries, light bulbs etc. </p>
+     <div class="card-footer bg-transparent border-success"> <p class="btn btn-light"><small class="text-muted"><a href="https://www.khaleejtimes.com/uae/abu-dhabi/a-bus-on-uae-roads-to-collect-recyclable-waste-1" target="_blank">Read more.</a></small></p></div>
+    </div>
+  </div>
+</div>
+</div>
+    </div>
+    </div>
+    </body>
+    <!--footer----------------------------------------------------------------------------------------------------------------------------->
+    <br><br>
+    <footer class="card text-white bg-success text-center"  style="margin-bottom:0 ">
+        <div class="row">
+        <div class="col-sm-4 text-left">
+        <h5 >Useful Links</h5>
+            <li><a href="https://en.wikipedia.org/wiki/Recycling" target="_blank"> Wikipedia</a></li>  
+            <li><a href="https://www.britannica.com/science/recycling" target="_blank"> Britannica</a></li>
+            <li><a href="https://search.proquest.com/docview/2390571904?pq-origsite=gscholar&fromopenview=true" target="_blank">
+                ProQuest</a></li>
+            <li><a href="https://nems.nih.gov/environmental-programs/Pages/Benefits-of-Recycling.aspx" target="_blank"> NIS</a></li>
+        </div>
+            
+            <div class="col-sm-4 icon-footer">
+                <h5>Contact us</h5>
+                <br>
+  <a href="#" class="twitter" ><i class="fa fa-twitter"></i></a>
+  <a href="#" class="linkedin"><i class="fa fa-linkedin"></i></a>  
+            </div>
+            
+        <div class="col-sm-4">
+            <a href="#">Terms and Conditions</a> <br>
+            <a href="#">Privacy Policy</a> <br>
+            <button type="button" class="btn btn-success" disabled>Copyright © 2020 Merry Zeray</button>
+
+        </div>
+            </div>        
+<div class="alert alert-success " role="alert">
+<a href="feedback.html" class="alert-link">Feedback</a>
+    </div>
+</footer>
+</html>
